@@ -23,6 +23,12 @@ Note that the answer must be a substring, "pwke" is a subsequence and not a subs
  * @param {string} s
  * @return {number}
  */
+
+
+/**
+ * If a repeat pair appears, next left should start from right on of this repeat pair:
+ * e.g.acwe[f'f]dca', do not need to iterate all index
+*/
 var lengthOfLongestSubstring = function(s) {
     let totalMap = {};
 
