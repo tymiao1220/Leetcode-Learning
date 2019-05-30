@@ -33,6 +33,7 @@ var reverse = function(x) {
       positiveX = Math.floor(positiveX/10);
       rev = rev * 10 + pop;
   }
+  if (rev>Math.pow(2,31)-1) return 0;
   rev = rev * Math.sign(x);
   return rev;
 };
