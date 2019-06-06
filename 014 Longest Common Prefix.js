@@ -21,7 +21,15 @@ All given inputs are in lowercase letters a-z
  * @param {string[]} strs
  * @return {string}
  */
- 
+/*
+ !Only prefix 
+*/
 var longestCommonPrefix = function(strs) {
+    if(strs.length == 0){
+      return '';
+    }
+    for(let b = 0; b < strs.length; b++){
+      if (strs[b].indexOf(strs[0].slice(0,strs[0].length))
+    } 
     
 };
